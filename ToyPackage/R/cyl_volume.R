@@ -2,7 +2,7 @@
 #'
 #' @param radius Any number greater than zero
 #' @param height Any number greater than zero
-#' @return The product of \code{radius}, \code{height} and \pi.
+#' @return The product of \code{radius}, \code{height} and pi.
 #'
 #' @examples
 #' cyl_volume(2,4)
@@ -10,8 +10,10 @@
 #'
 
 cyl_volume <- function(radius, height){
+  if(radius>0 & height>0) {
   volume <- pi * radius * height
   return(volume)
+  } else {
+    print("Error: Height and radius must be greater than zero")
+  }
 }
-
-
