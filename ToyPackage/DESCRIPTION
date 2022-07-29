@@ -2,10 +2,18 @@ Package: ToyPackage
 Type: Package
 Title: ToyPackage
 Version: 0.1.1
-Author: Daniel Petterson
-Maintainer: Daniel Petterson <Daniel-petterson@outlook.com>
+Author: c(person(given = "Daniel",
+             family = "Petterson",
+             role = c("aut", "cre"),
+             email = "daniel-petterson@outlook.com",
+	     comment = c(ORCHID = "Unable to register due to orchid.org being offline for maintenance")
+Maintainer: Daniel Petterson <daniel-petterson@outlook.com>
 Description: Includes functions to calculate the height, radius and volume of a cylinder. Contains a dataset of light intensity readings and a function to plot a rectangle.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.0
+Imports:
+	ggplot2
+Depends:
+	R (>= 2.10)
